@@ -26,30 +26,32 @@
       <input type="submit" id="submit" value="Search">
     </form>
 
+    <!-- date -->
+    <p id="today-date"></p>
 
-    <div class="container border h-25 w-50 mt-5">
-      <!-- Location -->
-      <h1 id="location"></h1>
+    <div id='data-display' class="container h-25 w-50 mt-5 d-flex justify-content-between">
+      <div class="left container">
+        <!-- Location -->
+        <h1 id="location"></h1>
 
-      <!-- Temperature -->
-      <div class="tempinfo">
-        <div class="main-temp-info">
-          <img src="" id="temp-icon" alt="">
-          <h1 id="temp"></h1>
+        <!-- Temperature -->
+        <div class="tempinfo">
+          <div class="main-temp-info">
+            <img src="" id="temp-icon" alt="">
+            <h1 id="temp"></h1>
+          </div>
+          <!-- feels like -->
+          <p id="feels-like"></p>
         </div>
-        <p id="feels-like"></p>
       </div>
-      <!-- feels like -->
-      <!-- date -->
-      <p id="today-date"></p>
-      <!-- Humidity -->
-      <p id="humidity"></p>
-      <!-- conditions -->
-      <p id="conditions"></p>
-      <!-- chance of Rain -->
-      <p id="rain"></p>
-      <!-- wind Speed -->
-      <p id="wind-speed"></p>
+      <div class="right d-flex flex-column align-items-end container">
+        <!-- Humidity -->
+        <p id="humidity"></p>
+        <!-- conditions -->
+        <p id="conditions"></p>
+        <!-- wind Speed -->
+        <p id="wind-speed"></p>
+      </div>
 
 
       <!-- ----- -->

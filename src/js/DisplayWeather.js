@@ -9,6 +9,33 @@ const humidity = document.querySelector('#humidity');
 const conditions = document.querySelector("#conditions");
 const windSpeed = document.querySelector("#wind-speed");
 
+// months of the year used in updateDate()
+
+  const months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+// days of the week used in updateDate()
+  const days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+
 // global funtion actioned with event
 const DisplayWeather = (data) => {
   updateLocationDisplay(data.location.name);
@@ -41,31 +68,6 @@ const updateTempIcon = (data) => {
 
 // update date
 const udpateDate = () => {
-  const months = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
-  ];
-
-  const days = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-  ];
-
   let date = new Date();
   let dateTrim = `${days[date.getDay()]} - ${
     months[date.getMonth()]

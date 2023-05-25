@@ -1,0 +1,11 @@
+input[type=text]{
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  text-align: center;
+  color: white;
+}
+
+input::placeholder{
+  color: white;
+}
