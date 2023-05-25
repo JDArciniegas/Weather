@@ -41,8 +41,36 @@ const updateTempIcon = (data) => {
 
 // update date
 const udpateDate = () => {
+  const months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+
+  const days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+
   let date = new Date();
-  todayDate.innerText = date;
+  let dateTrim = `${days[date.getDay()]} - ${
+    months[date.getMonth()]
+  } ${date.getDate()}, ${date.getFullYear()} `;
+  todayDate.innerText = dateTrim;
 }
 
 const udpateHumidity = (data) => {
