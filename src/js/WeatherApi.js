@@ -8,7 +8,7 @@ const forecast = (location) => {
       return response.json();
     })
     .then(function (response) {
-      DisplayWeather(response.location.name, response.current.condition.icon);
+      DisplayWeather(response);
       console.log(response);
     });
 };

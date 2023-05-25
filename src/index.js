@@ -11,6 +11,8 @@ const submit = document.querySelector("#submit");
 
 form.addEventListener("submit", (e) => {
   forecast(input.value);
+  console.log();
 });
 
+forecast("Edmonton");
 document.body.appendChild(component());

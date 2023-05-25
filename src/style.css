@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  color: yellow;
   background: #1D4350;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #A43931, #1D4350);
