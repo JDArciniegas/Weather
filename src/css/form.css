@@ -1,11 +1,13 @@
-input[type=text]{
-  background-color: transparent;
-  border: none;
-  border-bottom: 1px solid white;
-  text-align: center;
-  color: white;
+.top-right {
+  padding: 25px;
 }
 
-input::placeholder{
-  color: white;
+#location-search {
+border: none;
+border-bottom: 2px solid black;
+width: 300px;
+text-align: center;
+font-size: calc(var(--font-size) * 0.6);
 }
+
+

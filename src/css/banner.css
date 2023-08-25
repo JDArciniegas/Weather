@@ -1,0 +1,23 @@
+
+#temp{
+  font-size: var(--font-size-heading);
+}
+
+#temp-icon{
+  height: var(--font-size-heading);
+}
+
+#banner{
+  width: 100%;
+  padding: 5% 5%;
+}
+
+#location{
+  font-size: var(--font-size-heading);
+  padding: 0 5% 0 0
+}
+
+#today-date{
+  font-size: calc((var(--font-size) * 0.7));
+}
+

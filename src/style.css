@@ -1,16 +1,14 @@
 @import './css/form.css';
+@import './css/banner.css';
+
+:root{
+  --font-size: 30px;
+  --font-size-heading: 120px;
+}
 
 body {
   margin: 0;
   padding: 0;
-  color: white;
-  background: #1D4350;
-  background: #536976;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #292E49, #536976);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #292E49, #536976);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 #content {
@@ -20,7 +18,13 @@ body {
 
 
 /* data display */
-#data-display{
-  padding: 20px;
-  width: 100% !important;
+#data-display {
+  /* padding: 0 10%; */
+}
+
+.data-field {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  font-size: var(--font-size);
 }
